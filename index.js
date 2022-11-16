@@ -7,6 +7,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use(require("./routes/characters"));
+app.use(require("./routes/character"));
 app.use(require("./routes/comics"));
 
 app.all("*", (req, res) => {
